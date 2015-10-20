@@ -1,25 +1,23 @@
 <?php
-namespace Sge\Service;
 
-use Sge\Exception;
+namespace Sge\Service;
 
 class Sge
 {
     /**
-     *
      * @return mixed
      */
     public function init()
     {
-        return set_error_handler(array($this,'error_handler'));
+        return set_error_handler(array($this, 'error_handler'));
     }
 
     /**
-     * @param integer $error_handler
+     * @param int    $error_handler
      * @param string $err_msg
      * @param string $err_file
-     * @param integer $err_line
-     * @param array $err_context
+     * @param int    $err_line
+     * @param array  $err_context
      * 
      * @throws \Sge\Exception\ErrorException
      * @throws \Sge\Exception\WarningException
@@ -35,7 +33,8 @@ class Sge
      * @throws \Sge\Exception\RecoverableErrorException
      * @throws \Sge\Exception\DeprecatedException
      * @throws \Sge\Exception\UserDeprecatedException
-     * @return boolean
+     *
+     * @return bool
      */
     public function error_handler($error_handler, $err_msg, $err_file, $err_line, array $err_context)
     {
@@ -74,7 +73,7 @@ class Sge
             case E_USER_DEPRECATED:
                 throw new \Sge\Exception\UserDeprecatedException($err_msg, 0, $error_handler, $err_file, $err_line);
         }
-        
+
         return true;
     }
 }
