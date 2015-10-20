@@ -1,6 +1,6 @@
 <?php
 namespace Sge\Exception;
 
-class StrictException extends ErrorException
+class StrictException extends \ErrorException
 {
 }

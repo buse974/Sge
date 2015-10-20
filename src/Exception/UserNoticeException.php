@@ -1,6 +1,6 @@
 <?php
 namespace Sge\Exception;
 
-class UserNoticeException extends ErrorException
+class UserNoticeException extends \ErrorException
 {
 }

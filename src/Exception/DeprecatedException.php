@@ -1,6 +1,6 @@
 <?php
 namespace Sge\Exception;
 
-class DeprecatedException extends ErrorException
+class DeprecatedException extends \ErrorException
 {
 }

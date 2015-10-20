@@ -1,6 +1,6 @@
 <?php
 namespace Sge\Exception;
 
-class UserDeprecatedException extends ErrorException
+class UserDeprecatedException extends \ErrorException
 {
 }

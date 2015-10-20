@@ -1,6 +1,6 @@
 <?php
 namespace Sge\Exception;
 
-class WarningException extends ErrorException
+class WarningException extends \ErrorException
 {
 }
