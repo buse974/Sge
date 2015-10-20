@@ -1,0 +1,27 @@
+{
+  "name": "buse974/sge",
+  "description": "System gestion Exception",
+  "type": "module",
+  "homepage": "https://github.com/buse974/Sge",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christophe Robert",
+      "email": "christophe.robert@ti1.fr"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+  },
+  "require-dev" : {
+    "satooshi/php-coveralls": "dev-master",
+    "fabpot/php-cs-fixer":"*",
+    "phpunit/phpunit" : ">=4"
+  },
+  "autoload": {
+        "psr-4": { "Sge\\": "src/" }
+  },
+  "config": {
+       "bin-dir": "bin/"
+  }
+}
